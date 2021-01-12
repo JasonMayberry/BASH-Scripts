@@ -6,7 +6,6 @@ echo "like folder-01. An optional suffix after the folder name can be added like
 echo "Enter an integer not including the zero-padded numbers to start the sequential numbering."
 echo "Example 0 or 1 or 10... etc."
 read startInt
-# True if the length of $startInt is non-zero and also not the string "0"
 if [[ "$startInt" ]]; then
 	echo "Enter an optional folder name that you would like to use to prefix the sequential numbers."
 	echo "Enter it now or press enter to skip"
