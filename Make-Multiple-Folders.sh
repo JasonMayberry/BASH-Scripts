@@ -21,7 +21,6 @@ if [[ "$startInt" ]]; then
 		# let b=$num_of_folders+1
 		# END=b
 		END=$num_of_folders
-		## save $START, just in case if we need it later ##
 		i=$START
 		while [[ $i -le $END ]]
 		do
