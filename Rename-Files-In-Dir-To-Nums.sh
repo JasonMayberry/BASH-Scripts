@@ -9,7 +9,6 @@ echo "number like 0001.jpg. An optional prefix before file type can be added lik
 echo "Enter an integer not including the zero-padded numbers to start the sequential numbering."
 echo "Example 0 or 1 or 10... etc."
 read startInt
-# True if the length of $startInt is non-zero and also not the string "0"
 if [[ "$startInt" ]]; then
 	echo "Enter the file type that you would like to target. Example: .jpg .png .m4v .mp4 .pdf"
 	read file_type
