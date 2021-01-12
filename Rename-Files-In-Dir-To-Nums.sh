@@ -1,8 +1,13 @@
 #!/bin/bash
 # Rename-Files-In-Dir-To-Nums.sh
 
-echo "This Script will rename all files of a specified file type with a zero-padded sequential number like 0001.jpg. An optional prefix before file type can be added like 0001-Jake.jpg"
-echo "Enter an integer not including the zero-padded numbers to start the sequential numbering. Example 12 or 64"
+echo "******** WARNING: THIS SCRIPT TARGETS FILES AND FOLDERS ALIKE ********"
+echo "Press Ctrl+c to Abort"
+echo ""
+echo "This Script will rename all files of a specified file type with a zero-padded sequential "
+echo "number like 0001.jpg. An optional prefix before file type can be added like 0001-Jake.jpg"
+echo "Enter an integer not including the zero-padded numbers to start the sequential numbering."
+echo "Example 0 or 1 or 10... etc."
 read startInt
 # True if the length of $startInt is non-zero and also not the string "0"
 if [[ "$startInt" ]]; then
