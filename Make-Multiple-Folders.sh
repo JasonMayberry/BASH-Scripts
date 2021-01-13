@@ -25,7 +25,9 @@ if [[ "$startInt" ]]; then
 		while [[ $i -le $END ]]
 		do
 			new=$(printf "$folder_name %02d $suffix" "$a") #04 pad with zeros to length of 4
-			mkdir "$new"
+			# Remove the spaces from the string data using `xargv`
+			new_folder=$(echo "$new" | xargs)
+			mkdir "$new_folder"
 			let a=a+1
 			((i = i + 1))
 		done
