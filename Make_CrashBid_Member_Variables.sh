@@ -13,6 +13,7 @@ declare -a arr=(
 "Insurance_Co"
 "Claim_Number"
 "Adjuster"
+"Adjuster_Contact_Info"
 "Additional_Inspection_Information"
 
 # Vehicle Owner
